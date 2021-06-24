@@ -11,8 +11,7 @@ let birthDate = new Date(
 );
 
 let seconds = (currentDate.valueOf() - birthDate.valueOf()) / 1000;
-let secondsClean = Math.floor(seconds)
-let displaySeconds = (secondsClean).toLocaleString();
+let secondsClean = Math.floor(seconds);
 
 if (isNaN(secondsClean)) {
     alert("Please refresh and enter numbers for the date info requested");
@@ -21,7 +20,7 @@ if (isNaN(secondsClean)) {
     
     document.write(
         `<h2 style="color:blue;">Your life in seconds is<br>`
-        + displaySeconds
+        + secondsClean.toLocaleString()
         + ` seconds<br><em>...and may you have many more!</em></h2>`
     )
 }
