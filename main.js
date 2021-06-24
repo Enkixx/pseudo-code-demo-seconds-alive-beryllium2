@@ -19,8 +19,6 @@ if (isNaN(secondsClean)) {
 } else {
     
     document.write(
-        `<h2 style="color:blue;">Your life in seconds is<br>`
-        + secondsClean.toLocaleString()
-        + ` seconds<br><em>...and may you have many more!</em></h2>`
+        `<h2 style="color:blue;">Your life in seconds is<br>${secondsClean.toLocaleString()} seconds<br><em>...and may you have many more!</em></h2>`
     )
 }
