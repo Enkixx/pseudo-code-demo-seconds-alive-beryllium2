@@ -11,7 +11,7 @@ let birthDate = new Date(
 );
 
 let seconds = (currentDate.valueOf() - birthDate.valueOf()) / 1000;
-let secondsClean = Math.floor(seconds)
+let secondsClean = Math.floor(seconds);
 
 if (isNaN(secondsClean)) {
     alert("Please refresh and enter numbers for the date info requested");
