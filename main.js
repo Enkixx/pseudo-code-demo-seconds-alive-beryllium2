@@ -15,12 +15,12 @@ let secondsClean = Math.floor(seconds)
 
 if (isNaN(secondsClean)) {
     alert("Please refresh and enter numbers for the date info requested");
-    document.write("<h2>Please Refresh</h2>")
+    document.write(`<h2 style="color:red;">Please Refresh</h2>`)
 } else {
     
     document.write(
-        `<h2>Your life in seconds is `
+        `<h2 style="color:blue;">Your life in seconds is<br>`
         + secondsClean
-        + ` seconds...<br><em>...and may you have many more!</em></h2>`
+        + ` seconds<br><em>...and may you have many more!</em></h2>`
     )
 }
